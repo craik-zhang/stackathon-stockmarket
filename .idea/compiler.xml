@@ -9,6 +9,7 @@
         <module name="cloud-user-service" />
         <module name="cloud-auth-service" />
         <module name="common" />
+        <module name="cloud-file-upload-service" />
         <module name="cloud-ipo-service" />
         <module name="cloud-eureka-service" />
         <module name="cloud-company-service" />

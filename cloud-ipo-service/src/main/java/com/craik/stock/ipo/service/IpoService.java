@@ -2,10 +2,13 @@ package com.craik.stock.ipo.service;
 
 import com.craik.stock.entity.IpoEntity;
 import org.springframework.data.domain.Page;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
+import java.util.Map;
 
 public interface IpoService {
+    public Map<String,Object> fileUpload(MultipartFile multipartFile);
 
     /**
      * ��ҳ��ѯ�û��б�

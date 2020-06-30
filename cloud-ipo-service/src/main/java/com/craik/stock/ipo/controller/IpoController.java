@@ -7,8 +7,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/ipo")
@@ -24,6 +28,24 @@ public class IpoController {
     @GetMapping
     public List<IpoEntity> findAllIpos(){
         return ipoService.findAllIpos();
+    }
+
+    @PostMapping("/upload/xfer")
+    @ResponseBody
+    public Map<String, Object> uploadFile(HttpServletRequest request, @RequestParam("file") MultipartFile file){
+        Map<String ,Object> result = new HashMap<>();
+        String path = request.getSession().getServletContext().getRealPath("/");
+        try{
+            if(!file.isEmpty()){
+                result = ipoService.fileUpload(file);
+            }else {
+                result.put("code","1");
+                result.put("message","empty！");
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return result;
     }
 
     @PostMapping
