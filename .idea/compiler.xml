@@ -7,11 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-user-service" />
-        <module name="cloud-zuul-service" />
+        <module name="cloud-auth-service" />
         <module name="common" />
+        <module name="cloud-ipo-service" />
         <module name="cloud-eureka-service" />
         <module name="cloud-company-service" />
-        <module name="cloud-auth-service" />
+        <module name="cloud-zuul-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
