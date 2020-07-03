@@ -14,7 +14,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter;
 import org.springframework.web.filter.DelegatingFilterProxy;
 
-import com.iiht.stock.auth.repository.UserRepository;
+import com.craik.stock.auth.repository.UserRepository;
 
 @Configuration
 //@EnableWebSecurity

@@ -11,8 +11,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.iiht.stock.auth.entity.UserEntity;
-import com.iiht.stock.auth.repository.UserRepository;
+import com.craik.stock.auth.entity.UserEntity;
+import com.craik.stock.auth.repository.UserRepository;
 
 public class AuthUserDetailsService implements UserDetailsService{
 	private UserRepository userRepository;

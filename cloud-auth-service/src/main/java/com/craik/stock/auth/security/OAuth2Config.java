@@ -9,7 +9,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.A
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 
-import com.iiht.stock.auth.repository.UserRepository;
+import com.craik.stock.auth.repository.UserRepository;
 
 /**
  * AuthorizationServerConfigurerAdapter类是Spring Security的核心部分，它提供了执行关键验证和授权功能的基本机制
